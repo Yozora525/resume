@@ -1,0 +1,33 @@
+.guide{
+    display: flex;
+}
+
+nav{
+    height: 90px;
+    font-size: 24px;
+    text-align: center;
+    background-color: 	#FFABFF;
+}
+nav ul{
+    margin: auto;
+    width: 510px;
+
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+}
+
+nav a{
+    position: relative;
+    padding: 30px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    opacity: 0.8;
+}

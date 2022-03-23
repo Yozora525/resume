@@ -8,18 +8,43 @@
     <script src="assets/lib/jquery/jquery.min.js"></script>
     <script src="assets/lib/echarts/echarts.min.js"></script>
     <script src="assets/lib/timeline/timeline.min.js"></script>
+    <script src="assets/lib/vanta/three.r119.min.js"></script>
+    <script src="assets/lib/vanta/vanta.net.min.js"></script>
+    
+    <style type="text/css">
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            overflow: hidden;
+        }
+        
+        #background{
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/guide.css" />
 </head>
 <body>
-    <nav>
-        <!-- 導覽列 -->
-    </nav>
-    <header>
-        <!-- 個人介紹 -->
-    </header>
+    <div id="background">
+        <nav class="guide">
+            <ul>
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">skill</a></li>
+                <li><a href="#">Experiences</a></li>
+            </ul>
+        </nav>
+                <!-- 個人介紹 -->
     <!-- 程式能力
     專業技能
     攝影作品
     經驗(社團/工作) -->
+    </div> 
+    
+    
+    <script src="assets/js/background.js"></script>
     <footer>
 
     </footer>
