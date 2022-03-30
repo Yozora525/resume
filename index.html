@@ -8,9 +8,8 @@
     <script src="assets/lib/jquery/jquery.min.js"></script>
     <script src="assets/lib/echarts/echarts.min.js"></script>
     <script src="assets/lib/timeline/timeline.min.js"></script>
-    <script src="assets/lib/vanta/three.r119.min.js"></script>
-    <script src="assets/lib/vanta/vanta.net.min.js"></script>
     <script src="assets/lib/slick/slick/slick.js"></script>
+    
     <style type="text/css">
         *{
             margin: 0%;
@@ -19,13 +18,13 @@
         }
 
         body{
-            overflow: hidden;
+            background-image: url("assets/img/back.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
         }
         
-        #background{
-            width: 100%;
-            height: 90vh;
-        }
     </style>
     <link rel="stylesheet" href="assets/lib/slick/slick/slick.css" />
     <link rel="stylesheet" href="assets/lib/slick/slick/slick-theme.css" />
@@ -35,7 +34,6 @@
 </head>
 <body>
     
-    <div id="background">
         <nav class="guide">
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
@@ -66,12 +64,14 @@
             </div>
         </section>
         <section class="skill-style" id="skill">
-            <div class="">
-                <!-- 標題 skill -->
-                <span class="article">Program Ability</span>
-                <div class="">
-                    <!-- 圖表echarts --> 
-                </div>
+            <div class="skill-program">
+                <span class="">Program Skills</span>
+                <!-- 圖表echarts --> 
+                <div class="" id="program-python" style="width: 15%;height:200%;border:1px solid #000;padding-top:0px;"></div>
+                <div class="" id="program-java" style="width: 15%;height:200%;border:1px solid #000;padding-top:0px;"></div>
+                <div class="" id="program-javascript" style="width: 15%;height:200%;border:1px solid #000;padding-top:0px;"></div>
+                <div class="" id="program-jquery" style="width: 15%;height:200%;border:1px solid #000;padding-top:0px;"></div>
+                <div class="" id="program-c" style="width: 15%;height:200%;border:1px solid #000;padding-top:0px;"></div>
             </div>
             <div class="">
                 <!-- 標題 skill -->
@@ -85,6 +85,7 @@
             <div class="">
                 <!-- 標題 experience -->
                 <span class="article">Experiences</span>
+                
                 <div class="">
                     <!-- <span class=""></span> -->
                     <!--  課程活動 管理學、企業管理 -->
@@ -94,6 +95,8 @@
                     <!-- <span class=""></span> -->
                     <!--  社團活動 -->
                     <!-- timeline --> 
+                    
+                    
                 </div>
                 <div class="">
                     <!-- <span class=""></span> -->
@@ -112,7 +115,6 @@
                 </div>
             </div>
         </section>
-    </div> 
     <footer>
         <div class="footer">
             <!-- footer -->
@@ -120,5 +122,9 @@
         </div>
     </footer>
 </body>
-    <script src="assets/js/background.js"></script>
+    <script src="assets/js/program-python.js"></script>
+    <script src="assets/js/program-java.js"></script>
+    <script src="assets/js/program-javascript.js"></script>
+    <script src="assets/js/program-jquery.js"></script>
+    
 </html>
