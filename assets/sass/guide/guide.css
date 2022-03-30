@@ -1,0 +1,41 @@
+/* sm - Small devices (landscape phones, 576px and up) */
+/* lg - Large devices (desktops, 992px and up) */
+.guide {
+  display: flex;
+}
+
+@media (min-width: 1000px) {
+  nav {
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #FFD78C;
+    font-weight: bold;
+  }
+}
+@media (min-width: 1000px) {
+  nav ul {
+    margin: auto;
+    width: 510px;
+  }
+}
+@media (min-width: 1000px) {
+  nav li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+  }
+}
+@media (min-width: 1000px) {
+  nav a {
+    position: relative;
+    padding: 30px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+  }
+}
+nav a:hover {
+  opacity: 0.8;
+}/*# sourceMappingURL=guide.css.map */

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* sm - Small devices (landscape phones, 576px and up) */
+/* lg - Large devices (desktops, 992px and up) */
+/* section 設定 */
+@media (min-width: 1000px) {
+  .introduction-style, .skill-style, .experience-style {
+    margin: 2.5%;
+    background-color: rgba(255, 250, 205, 0.8);
+    border-radius: 20px;
+  }
+}
+
+/* 自我介紹 */
+.container {
+  display: inline-flex;
+}
+@media (min-width: 1000px) {
+  .container .introduction-picture {
+    text-align: center;
+    width: 30%;
+  }
+}
+@media (min-width: 1000px) {
+  .container .introduction-picture .personal-picture {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .container .introduction-introduction {
+    text-align: center;
+    width: 40%;
+  }
+}
+@media (min-width: 1000px) {
+  .container .introduction-introduction .introduction-info {
+    font-size: 130%;
+  }
+}
+@media (min-width: 1000px) {
+  .container .introduction-introduction .introduction-name {
+    font-size: 200%;
+  }
+}
+@media (min-width: 1000px) {
+  .container .introduction-introduction .introduction-motto {
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
+@media (min-width: 1000px) {
+  .container .introduction-icon {
+    padding-top: 5%;
+    text-align: center;
+    width: 30%;
+  }
+}
+@media (min-width: 1000px) {
+  .container .introduction-icon .icon {
+    width: 20%;
+    height: 60%;
+    padding-right: 7%;
+  }
+}
+
+/* 技能 */
+.skill-program-container, .skill-professional-container {
+  display: inline-flex;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  .skill-program {
+    text-align: center;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+}/*# sourceMappingURL=index.css.map */

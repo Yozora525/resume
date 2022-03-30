@@ -1,0 +1,111 @@
+/* sm - Small devices (landscape phones, 576px and up) */
+@mixin small {
+    @media (min-width: 0px){
+        @content;
+    }
+}
+
+/* lg - Large devices (desktops, 992px and up) */
+@mixin large {
+    @media (min-width: 1000px){
+        @content;
+    }
+}
+
+/* section 設定 */
+.introduction-style, .skill-style, .experience-style{
+    @include large{
+        margin: 2.5%;
+        background-color: 	rgba(255, 250, 205, 0.8);
+        border-radius: 20px;
+    }
+    
+}
+
+/* 自我介紹 */
+.container{
+    display: inline-flex;
+
+    .introduction-picture{
+
+        @include large {
+            text-align: center;
+            width: 30%;
+        }
+
+        .personal-picture{
+            @include large{
+                width: 50%;
+                height: 100%;
+                border-radius: 50%;
+            }
+            
+        }
+    }
+
+    .introduction-introduction{
+        @include large{
+            text-align: center;
+            width: 40%;
+        }
+
+        .introduction-info{
+            @include large{
+                font-size: 130%;
+            }
+            
+        }
+
+        .introduction-name{
+            @include large{
+                font-size: 200%;
+            }
+            
+        }
+
+        .introduction-motto{
+            @include large{
+                font-size: 150%;
+                font-style: italic;
+                font-weight: bold;
+            }
+            
+        }
+        
+    }
+
+    .introduction-icon{
+            @include large{
+                padding-top: 5%;
+                text-align: center;
+                width: 30%;
+            }
+            .icon{
+                @include large{
+                    width: 20%;
+                    height: 60%;
+                    padding-right: 7%;
+                }
+                
+            }
+        }
+}
+
+
+/* 技能 */
+
+.skill-program-container, .skill-professional-container{
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+}
+
+.skill-program{
+
+    @include large{
+        text-align: center;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+    
+}

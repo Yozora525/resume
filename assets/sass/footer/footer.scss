@@ -1,0 +1,24 @@
+/* sm - Small devices (landscape phones, 576px and up) */
+@mixin small {
+    @media (min-width: 0px){
+        @content;
+    }
+}
+
+/* lg - Large devices (desktops, 992px and up) */
+@mixin large {
+    @media (min-width: 1000px){
+        @content;
+    }
+}
+
+.footer {
+    @include large{
+        height: 5%;
+        width: 100%;
+        background-color: #FFD78C;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+    
+}
