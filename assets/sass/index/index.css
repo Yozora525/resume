@@ -70,6 +70,7 @@
   display: inline-flex;
   width: 100%;
   position: relative;
+  text-align: center;
 }
 
 @media (min-width: 1000px) {

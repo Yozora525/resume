@@ -7,7 +7,6 @@
     <title>個人履歷</title>
     <script src="assets/lib/jquery/jquery.min.js"></script>
     <script src="assets/lib/echarts/echarts.min.js"></script>
-    <script src="assets/lib/timeline/timeline.min.js"></script>
     <script src="assets/lib/slick/slick/slick.js"></script>
     <script src="assets/js/doc.ready/slide.js"></script>
     
@@ -32,6 +31,7 @@
     <link rel="stylesheet" href="assets/sass/index/index.css" />
     <link rel="stylesheet" href="assets/sass/guide/guide.css" />
     <link rel="stylesheet" href="assets/sass/footer/footer.css" />
+    <link rel="stylesheet" href="assets/sass/timeline/timeline.css" />
 </head>
 <body>
     <header>
@@ -76,44 +76,47 @@
             </div>
             <div class="skill-professional-container">
                 <span style="font-size:28px;" id="skill-professional-title">Professional Skills</span>
-                <div id="skill-professional" style="width: 70%;height: 400%;">
+                <div id="skill-professional" style="width: 70%;height: 350%;">
                     <!-- 圖表 --> 
                 </div>
             </div>
         </section>
         <section class="experience-style" id="experience">
-            <div class="">
-                <!-- 標題 experience -->
-                <span style="font-size:28px;">Experiences</span>
-                
-                <div class="">
-                    <!-- <span class=""></span> -->
-                    <!--  課程活動 管理學、企業管理 -->
-                    <!-- timeline --> 
-                </div>
-                <div class="">
-                    <!-- <span class=""></span> -->
-                    <!--  社團活動 -->
-                    <!-- timeline --> 
+            <div class="timeline-container">
+                <div class="timeline-list">
+                    <!-- 標題 experience -->
+                    <!-- <span style="font-size:28px;">Experiences</span> -->
                     
-                    
+                    <div class="experience-list" date-time="1">
+                        <!-- <span class=""></span> -->
+                        <!--  課程活動 管理學、企業管理 -->
+                        <!-- timeline --> 
+                    </div>
+                    <div class="experience-list" date-time="2">
+                        <!-- <span class=""></span> -->
+                        <!--  社團活動 -->
+                        <!-- timeline --> 
+                        
+                        
+                    </div>
+                    <div class="experience-list" date-time="3">
+                        <!-- <span class=""></span> -->
+                        <!--  專案 -->
+                        <!-- timeline --> 
+                    </div>
+                    <div class="experience-list" date-time="4">
+                        <!-- <span class=""></span> -->
+                        <!--  工作經歷 -->
+                        <!-- timeline --> 
+                    </div>
                 </div>
-                <div class="">
-                    <!-- <span class=""></span> -->
-                    <!--  專案 -->
-                    <!-- timeline --> 
-                </div>
-                <div class="">
-                    <!-- <span class=""></span> -->
-                    <!--  工作經歷 -->
-                    <!-- timeline --> 
-                </div>
+            </div>
                 <div class="">
                     <!-- <span class=""></span> -->
                     <!--  證照 -->
                     <!-- slick --> 
                 </div>
-            </div>
+            
         </section>
     <footer>
         <div class="footer">

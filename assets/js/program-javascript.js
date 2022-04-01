@@ -58,8 +58,8 @@ option = {
       },
       detail: {
         width: 20,
-        height: 14,
-        fontSize: 14,
+        height: 12,
+        fontSize: 12,
         color: 'auto',
         borderColor: 'auto',
         borderRadius: 20,

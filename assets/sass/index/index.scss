@@ -80,6 +80,8 @@
                 text-align: center;
                 width: 30%;
             }
+
+
             .icon{
                 @include large{
                     width: 20%;
@@ -98,6 +100,7 @@
     display: inline-flex;
     width: 100%;
     position: relative;
+    text-align: center;
 }
 
 .skill-program{
