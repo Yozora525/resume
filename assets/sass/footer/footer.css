@@ -2,10 +2,10 @@
 /* lg - Large devices (desktops, 992px and up) */
 @media (min-width: 1000px) {
   .footer {
-    height: 5%;
+    position: absolute;
+    height: 50px;
     width: 100%;
     background-color: #FFD78C;
     padding-top: 20px;
-    margin-bottom: 0;
   }
 }/*# sourceMappingURL=footer.css.map */

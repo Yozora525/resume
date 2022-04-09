@@ -14,11 +14,12 @@
 
 .footer {
     @include large{
-        height: 5%;
+        position: absolute;
+        height: 50px;
         width: 100%;
         background-color: #FFD78C;
         padding-top: 20px;
-        margin-bottom: 0;
+
     }
     
 }

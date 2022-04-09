@@ -112,3 +112,43 @@
     }
     
 }
+
+
+// 經驗
+
+.experience-container{
+    
+    @include large{
+        padding-right: 5%;
+        padding-left: 5%;
+        .experience-courses{
+            width: 100%;
+            
+        }
+
+        .experience{
+            display:flex;
+            // border: 5px solid #000;
+
+            .experience-img-container{
+                width: 50%;
+                // border: 5px solid rgb(213, 17, 17);
+                text-align: center;
+            }
+
+            .experience-description{
+                width: 50%;
+                font-size: 24px;
+                text-align: center;
+                font-style: italic;
+            }
+
+            .experience-img{
+            width: 400px;
+            height: 310px;
+            }
+
+        }
+
+    }
+}

@@ -79,4 +79,31 @@
     padding-right: 3%;
     padding-left: 3%;
   }
+}
+
+@media (min-width: 1000px) {
+  .experience-container {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .experience-container .experience-courses {
+    width: 100%;
+  }
+  .experience-container .experience {
+    display: flex;
+  }
+  .experience-container .experience .experience-img-container {
+    width: 50%;
+    text-align: center;
+  }
+  .experience-container .experience .experience-description {
+    width: 50%;
+    font-size: 24px;
+    text-align: center;
+    font-style: italic;
+  }
+  .experience-container .experience .experience-img {
+    width: 400px;
+    height: 310px;
+  }
 }/*# sourceMappingURL=index.css.map */
