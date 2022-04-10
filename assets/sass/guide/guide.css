@@ -4,6 +4,15 @@
   display: flex;
 }
 
+@media (min-width: 0px) {
+  nav {
+    height: 100px;
+    font-size: 36px;
+    text-align: center;
+    background-color: #FFD78C;
+    font-weight: bold;
+  }
+}
 @media (min-width: 1000px) {
   nav {
     height: 50px;
@@ -13,18 +22,31 @@
     font-weight: bold;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 0px) {
   nav ul {
     margin: auto;
-    width: 510px;
+    width: 100%;
   }
 }
 @media (min-width: 1000px) {
-  nav li {
-    list-style: none;
-    display: inline-block;
+  nav ul {
+    margin: auto;
+    width: 100%;
+  }
+}
+nav li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+@media (min-width: 0px) {
+  nav a {
     position: relative;
-    color: #ffffff;
+    padding: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
   }
 }
 @media (min-width: 1000px) {

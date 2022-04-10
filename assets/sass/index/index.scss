@@ -14,19 +14,25 @@
 
 /* section 設定 */
 .introduction-style, .skill-style, .experience-style{
-    @include large{
-        margin: 2.5%;
-        background-color: 	rgba(255, 250, 205, 0.8);
-        border-radius: 20px;
-    }
+    margin: 2.5%;
+    background-color: 	rgba(255, 250, 205, 0.8);
+    border-radius: 20px;
+
     
 }
 
 /* 自我介紹 */
 .container{
-    display: inline-flex;
+    @include large{
+        display: inline-flex;
+    }
+    
 
     .introduction-picture{
+        @include small{
+            text-align: center;
+            width: 100%;
+        }
 
         @include large {
             text-align: center;
@@ -34,6 +40,12 @@
         }
 
         .personal-picture{
+            @include small{
+                width: 50%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
             @include large{
                 width: 50%;
                 height: 100%;
@@ -44,12 +56,19 @@
     }
 
     .introduction-introduction{
+        @include small{
+            text-align: center;
+            width: 100%;
+        }
         @include large{
             text-align: center;
             width: 40%;
         }
 
         .introduction-info{
+            @include small{
+                font-size: 100%;
+            }
             @include large{
                 font-size: 130%;
             }
@@ -57,6 +76,9 @@
         }
 
         .introduction-name{
+            @include small{
+                font-size: 150%;
+            }
             @include large{
                 font-size: 200%;
             }
@@ -64,10 +86,15 @@
         }
 
         .introduction-motto{
+            font-style: italic;
+                font-weight: bold;
+            @include small{ 
+                font-size: 120%;
+                
+            }
+
             @include large{
                 font-size: 150%;
-                font-style: italic;
-                font-weight: bold;
             }
             
         }
@@ -75,6 +102,11 @@
     }
 
     .introduction-icon{
+            @include small{
+                padding-top: 5%;
+                text-align: center;
+                width: 100%;
+            }
             @include large{
                 padding-top: 5%;
                 text-align: center;
@@ -83,6 +115,11 @@
 
 
             .icon{
+                @include small{
+                    width: 5%;
+                    height: 20%;
+                    padding-right: 4%;
+                }
                 @include large{
                     width: 20%;
                     height: 60%;
@@ -97,16 +134,24 @@
 /* 技能 */
 
 .skill-program-container, .skill-professional-container{
-    display: inline-flex;
-    width: 100%;
-    position: relative;
-    text-align: center;
+    @include small{
+        width: 100%;
+        // position: relative;
+        text-align: center;
+    }
+
+    @include large{
+        display: inline-flex;
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
 }
 
 .skill-program{
+    text-align: center;
 
     @include large{
-        text-align: center;
         padding-right: 3%;
         padding-left: 3%;
     }
@@ -117,6 +162,36 @@
 // 經驗
 
 .experience-container{
+    @include small{
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+        .experience-courses{
+            width: 100%;
+            
+        }
+
+        .experience{
+
+            .experience-img-container{
+                width: 100%;
+                text-align: center;
+            }
+
+            .experience-description{
+                width: 100%;
+                font-size: 24px;
+                text-align: center;
+                font-style: italic;
+            }
+
+            .experience-img{
+            width: 400px;
+            height: 310px;
+            }
+
+        }
+        
+    }
     
     @include large{
         padding-right: 5%;
@@ -132,7 +207,6 @@
 
             .experience-img-container{
                 width: 50%;
-                // border: 5px solid rgb(213, 17, 17);
                 text-align: center;
             }
 

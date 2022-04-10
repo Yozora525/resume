@@ -17,6 +17,14 @@
 }
 
 nav{
+    @include small{
+        height: 100px;
+        font-size: 36px;
+        text-align: center;
+        background-color: 	#FFD78C;
+        font-weight: bold;
+    }
+
     @include large{
         height: 50px;
         font-size: 24px;
@@ -27,22 +35,35 @@ nav{
     
 
     ul{
+        @include small{
+            margin: auto;
+            width: 100%;
+        }   
+
         @include large{
             margin: auto;
-            width: 510px;
+            width: 100%;
         }
     }
 
     li{
-        @include large{
-            list-style: none;
-            display: inline-block;
-            position: relative;
-            color: #ffffff;
-        }
+ 
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        color: #ffffff;
+        
     }
 
     a{
+        @include small{
+            position: relative;
+            padding: 20px;
+            transition: 0.3s;
+            text-decoration: none;
+            color: white;
+        }
+
         @include large{
             position: relative;
             padding: 30px;

@@ -1,11 +1,9 @@
 /* sm - Small devices (landscape phones, 576px and up) */
 /* lg - Large devices (desktops, 992px and up) */
-@media (min-width: 1000px) {
-  .footer {
-    position: absolute;
-    height: 50px;
-    width: 100%;
-    background-color: #FFD78C;
-    padding-top: 20px;
-  }
+.footer {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: #FFD78C;
+  padding-top: 20px;
 }/*# sourceMappingURL=footer.css.map */

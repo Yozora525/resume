@@ -13,13 +13,11 @@
 }
 
 .footer {
-    @include large{
-        position: absolute;
-        height: 50px;
-        width: 100%;
-        background-color: #FFD78C;
-        padding-top: 20px;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: #FFD78C;
+    padding-top: 20px;
 
-    }
     
 }
